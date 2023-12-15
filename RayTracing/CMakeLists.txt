@@ -12,13 +12,25 @@ include_directories(include)
 
 # Add the source files to the project
 set(SOURCES
-    src/main.cpp
+    # src/main.cpp
+    src/Scene_rays.cpp
+    include/color.hpp
 )
 
-# Create the executable
-add_executable(main ${SOURCES})
+# Create the library
+# add_library(scene STATIC src/Scene_rays.cpp)
 
-# Set the output directory for the executable
-set_target_properties(main PROPERTIES
+# Create the executable
+# add_executable(main ${SOURCES})
+
+add_executable(scene ${SOURCES})
+
+
+# Set the output directory for the executables
+# set_target_properties(main PROPERTIES
+#     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/src"
+# )
+
+set_target_properties(scene PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/src"
 )
