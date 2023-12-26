@@ -22,13 +22,13 @@ cmath
 iostream
 -
 
-/home/aditya.pawar/personal/RayTracing/src/Scene_rays.cpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/Scene_rays.cpp
 vec3.hpp
-/home/aditya.pawar/personal/RayTracing/src/vec3.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/vec3.hpp
 color.hpp
-/home/aditya.pawar/personal/RayTracing/src/color.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/color.hpp
 ray.hpp
-/home/aditya.pawar/personal/RayTracing/src/ray.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/ray.hpp
 iostream
 -
 fstream

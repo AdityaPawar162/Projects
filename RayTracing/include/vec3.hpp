@@ -106,4 +106,4 @@ class vec3 {
    
 
 
-#endif /* VEC3_HPP */
+#endif // !VEC3_HPP 

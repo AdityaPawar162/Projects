@@ -21,4 +21,4 @@ private:
   
 };
 
-#endif /* ray_hpp */
+#endif  // !ray_hpp 

@@ -5,4 +5,4 @@ CMakeFiles/scene.dir/src/Scene_rays.cpp.o
  ../include/color.hpp
  ../include/ray.hpp
  ../include/vec3.hpp
- /home/aditya.pawar/personal/RayTracing/src/Scene_rays.cpp
+ /home/aditya.pawar/personal/Projects/RayTracing/src/Scene_rays.cpp

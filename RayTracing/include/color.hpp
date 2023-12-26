@@ -13,4 +13,4 @@ void writeColor(std::ostream &out, color pixel_color) {
 }
 
 
-#endif /* COLOR_HPP */
+#endif //  !COLOR_HPP 
