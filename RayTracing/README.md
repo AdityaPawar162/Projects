@@ -1,33 +1,32 @@
-Ray Tracing Project
+# Ray Tracing Project
+
 This project involves ray tracing implementation in C++ to generate realistic images through simulating the behavior of light. Follow the steps below to build and run the code.
 
-Prerequisites
+## Prerequisites
+
 Make sure you have the following installed on your system:
 
-C++ compiler
-CMake
+- C++ compiler
+- CMake
 
-1.Build Instructions:
-git clone https://github.com/your-username/ray-tracing.git
-cd ray-tracing
+## Build Instructions
 
-2. Create a Build Directory
-mkdir build
-cd build
+1. Clone the Repository:
+   ```bash
+   git clone https://github.com/AdityaPawar162/Projects.git
+   cd ray-tracing
 
-3.Configure with CMake:
-cmake ..
+2. Configure with CMake:
+   ```bash
+   cmake ..
+3. Build the Project:
+   ```bash
+   make -j
 
-4.Build the Project:
-make -j
-
-Running the Executable
+## Running the Executable
 Once the build process is complete, run the executable using the following command:
 
-./src/main
-
-This will execute the ray tracing application, generating images based on the specified parameters in the code.
-
-
-
+   ```bash
+   ./src/main 
+   ```
 
