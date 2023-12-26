@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/color.hpp
+iostream
+-
+vec3.hpp
+../include/vec3.hpp
+
+../include/ray.hpp
+vec3.hpp
+../include/vec3.hpp
+
+../include/vec3.hpp
+cmath
+../include/cmath
+iostream
+-
+
+/home/aditya.pawar/personal/RayTracing/src/Scene_rays.cpp
+vec3.hpp
+/home/aditya.pawar/personal/RayTracing/src/vec3.hpp
+color.hpp
+/home/aditya.pawar/personal/RayTracing/src/color.hpp
+ray.hpp
+/home/aditya.pawar/personal/RayTracing/src/ray.hpp
+iostream
+-
+

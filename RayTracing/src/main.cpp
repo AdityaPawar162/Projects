@@ -1,5 +1,6 @@
 #include "vec3.hpp"
 #include "color.hpp"
+#include "ray.hpp"
 #include <iostream>
 
 int main()
@@ -15,7 +16,7 @@ int main()
         std::cerr << "\r Scanlines remaining: " << j << std::flush;
         for (int i = 0 ; i < image_width ; ++i) {
             color pixel_color(double(i)/(image_width - 1), double(j)/(image_height - 1));
-            writeColor(std::cout , pixel_color);
+            // writeColor(std::cout , pixel_color);
         }
      }
 
