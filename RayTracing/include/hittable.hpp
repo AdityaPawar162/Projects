@@ -1,10 +1,11 @@
 #ifndef HITTABLE_H
 #define HITTABLE_H
 
-#include "ray.hpp"
+#include "utils.hpp"
 
 class hit_record {
 public:
+  hit_record() : p(1,1,1),normal(0,0,1), t(0) {};
   point3 p;
   vec3 normal;
   double t;
@@ -20,9 +21,10 @@ public:
 
 class hittable {
 public:
+ 
   virtual ~hittable() = default;
 
   virtual bool hit(const ray &r,double ray_tmin,double ray_tmax, hit_record& rec) const = 0;
-}
+};
 
 #endif // !HITTABLE_H

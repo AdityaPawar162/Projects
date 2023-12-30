@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=YourProjectName
+CMAKE_PROJECT_NAME:STATIC=RTWeekend
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -223,6 +223,12 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+RTWeekend_BINARY_DIR:STATIC=/home/aditya.pawar/personal/Projects/RayTracing/build
+
+//Value Computed by CMake
+RTWeekend_SOURCE_DIR:STATIC=/home/aditya.pawar/personal/Projects/RayTracing
 
 //Value Computed by CMake
 YourProjectName_BINARY_DIR:STATIC=/home/aditya.pawar/personal/Projects/RayTracing/build

@@ -123,32 +123,32 @@ scene/fast:
 	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/build
 .PHONY : scene/fast
 
-src/Scene_rays.o: src/Scene_rays.cpp.o
+src/hit_objects_3.o: src/hit_objects_3.cpp.o
 
-.PHONY : src/Scene_rays.o
+.PHONY : src/hit_objects_3.o
 
 # target to build an object file
-src/Scene_rays.cpp.o:
-	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/Scene_rays.cpp.o
-.PHONY : src/Scene_rays.cpp.o
+src/hit_objects_3.cpp.o:
+	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/hit_objects_3.cpp.o
+.PHONY : src/hit_objects_3.cpp.o
 
-src/Scene_rays.i: src/Scene_rays.cpp.i
+src/hit_objects_3.i: src/hit_objects_3.cpp.i
 
-.PHONY : src/Scene_rays.i
+.PHONY : src/hit_objects_3.i
 
 # target to preprocess a source file
-src/Scene_rays.cpp.i:
-	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/Scene_rays.cpp.i
-.PHONY : src/Scene_rays.cpp.i
+src/hit_objects_3.cpp.i:
+	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/hit_objects_3.cpp.i
+.PHONY : src/hit_objects_3.cpp.i
 
-src/Scene_rays.s: src/Scene_rays.cpp.s
+src/hit_objects_3.s: src/hit_objects_3.cpp.s
 
-.PHONY : src/Scene_rays.s
+.PHONY : src/hit_objects_3.s
 
 # target to generate assembly for a file
-src/Scene_rays.cpp.s:
-	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/Scene_rays.cpp.s
-.PHONY : src/Scene_rays.cpp.s
+src/hit_objects_3.cpp.s:
+	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/hit_objects_3.cpp.s
+.PHONY : src/hit_objects_3.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... scene"
-	@echo "... src/Scene_rays.o"
-	@echo "... src/Scene_rays.i"
-	@echo "... src/Scene_rays.s"
+	@echo "... src/hit_objects_3.o"
+	@echo "... src/hit_objects_3.i"
+	@echo "... src/hit_objects_3.s"
 .PHONY : help
 
 

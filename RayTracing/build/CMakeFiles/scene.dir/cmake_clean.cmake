@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/scene.dir/src/Scene_rays.cpp.o"
-  "src/scene"
-  "src/scene.pdb"
+  "CMakeFiles/scene.dir/src/hit_objects_3.cpp.o"
+  "scene"
+  "scene.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/scene.dir/src/Scene_rays.cpp.o  -o src/scene 
+/usr/bin/c++     CMakeFiles/scene.dir/src/hit_objects_3.cpp.o  -o scene 
