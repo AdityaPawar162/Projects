@@ -5,6 +5,7 @@ CMakeFiles/scene.dir/src/hit_objects_3.cpp.o
  ../include/color.hpp
  ../include/hittable.hpp
  ../include/hittable_list.hpp
+ ../include/interval.hpp
  ../include/ray.hpp
  ../include/sphere.hpp
  ../include/utils.hpp

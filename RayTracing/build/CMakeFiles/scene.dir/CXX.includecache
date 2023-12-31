@@ -24,6 +24,8 @@ memory
 vector
 -
 
+../include/interval.hpp
+
 ../include/ray.hpp
 vec3.hpp
 ../include/vec3.hpp
@@ -41,6 +43,8 @@ limits
 -
 memory
 -
+interval.hpp
+../include/interval.hpp
 ray.hpp
 ../include/ray.hpp
 vec3.hpp
