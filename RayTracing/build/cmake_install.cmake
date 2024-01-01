@@ -1,4 +1,4 @@
-# Install script for directory: /home/aditya.pawar/personal/Projects/RayTracing
+# Install script for directory: /workspaces/Projects/RayTracing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aditya.pawar/personal/Projects/RayTracing/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/workspaces/Projects/RayTracing/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

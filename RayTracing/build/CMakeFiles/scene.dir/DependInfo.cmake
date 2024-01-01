@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/aditya.pawar/personal/Projects/RayTracing/src/hit_objects_3.cpp" "/home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles/scene.dir/src/hit_objects_3.cpp.o"
+  "/workspaces/Projects/RayTracing/src/after_refactoring.cpp" "/workspaces/Projects/RayTracing/build/CMakeFiles/scene.dir/src/after_refactoring.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

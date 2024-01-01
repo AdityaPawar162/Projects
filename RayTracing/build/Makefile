@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aditya.pawar/personal/Projects/RayTracing
+CMAKE_SOURCE_DIR = /workspaces/Projects/RayTracing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aditya.pawar/personal/Projects/RayTracing/build
+CMAKE_BINARY_DIR = /workspaces/Projects/RayTracing/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles /home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Projects/RayTracing/build/CMakeFiles /workspaces/Projects/RayTracing/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Projects/RayTracing/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ scene/fast:
 	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/build
 .PHONY : scene/fast
 
-src/hit_objects_3.o: src/hit_objects_3.cpp.o
+src/after_refactoring.o: src/after_refactoring.cpp.o
 
-.PHONY : src/hit_objects_3.o
+.PHONY : src/after_refactoring.o
 
 # target to build an object file
-src/hit_objects_3.cpp.o:
-	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/hit_objects_3.cpp.o
-.PHONY : src/hit_objects_3.cpp.o
+src/after_refactoring.cpp.o:
+	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/after_refactoring.cpp.o
+.PHONY : src/after_refactoring.cpp.o
 
-src/hit_objects_3.i: src/hit_objects_3.cpp.i
+src/after_refactoring.i: src/after_refactoring.cpp.i
 
-.PHONY : src/hit_objects_3.i
+.PHONY : src/after_refactoring.i
 
 # target to preprocess a source file
-src/hit_objects_3.cpp.i:
-	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/hit_objects_3.cpp.i
-.PHONY : src/hit_objects_3.cpp.i
+src/after_refactoring.cpp.i:
+	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/after_refactoring.cpp.i
+.PHONY : src/after_refactoring.cpp.i
 
-src/hit_objects_3.s: src/hit_objects_3.cpp.s
+src/after_refactoring.s: src/after_refactoring.cpp.s
 
-.PHONY : src/hit_objects_3.s
+.PHONY : src/after_refactoring.s
 
 # target to generate assembly for a file
-src/hit_objects_3.cpp.s:
-	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/hit_objects_3.cpp.s
-.PHONY : src/hit_objects_3.cpp.s
+src/after_refactoring.cpp.s:
+	$(MAKE) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/after_refactoring.cpp.s
+.PHONY : src/after_refactoring.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... scene"
-	@echo "... src/hit_objects_3.o"
-	@echo "... src/hit_objects_3.i"
-	@echo "... src/hit_objects_3.s"
+	@echo "... src/after_refactoring.o"
+	@echo "... src/after_refactoring.i"
+	@echo "... src/after_refactoring.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/scene.dir/src/hit_objects_3.cpp.o"
+  "CMakeFiles/scene.dir/src/after_refactoring.cpp.o"
   "scene"
   "scene.pdb"
 )

@@ -1,3 +1,3 @@
-/home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles/rebuild_cache.dir
-/home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles/edit_cache.dir
-/home/aditya.pawar/personal/Projects/RayTracing/build/CMakeFiles/scene.dir
+/workspaces/Projects/RayTracing/build/CMakeFiles/rebuild_cache.dir
+/workspaces/Projects/RayTracing/build/CMakeFiles/edit_cache.dir
+/workspaces/Projects/RayTracing/build/CMakeFiles/scene.dir

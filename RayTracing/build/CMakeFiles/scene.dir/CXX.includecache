@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../include/camera.hpp
+utils.hpp
+../include/utils.hpp
+color.hpp
+../include/color.hpp
+hittable.hpp
+../include/hittable.hpp
+iostream
+-
+
 ../include/color.hpp
 iostream
 -
@@ -56,17 +66,13 @@ cmath
 iostream
 -
 
-/home/aditya.pawar/personal/Projects/RayTracing/src/hit_objects_3.cpp
+/workspaces/Projects/RayTracing/src/after_refactoring.cpp
 utils.hpp
-/home/aditya.pawar/personal/Projects/RayTracing/src/utils.hpp
-color.hpp
-/home/aditya.pawar/personal/Projects/RayTracing/src/color.hpp
-hittable.hpp
-/home/aditya.pawar/personal/Projects/RayTracing/src/hittable.hpp
+/workspaces/Projects/RayTracing/src/utils.hpp
+camera.hpp
+/workspaces/Projects/RayTracing/src/camera.hpp
 hittable_list.hpp
-/home/aditya.pawar/personal/Projects/RayTracing/src/hittable_list.hpp
+/workspaces/Projects/RayTracing/src/hittable_list.hpp
 sphere.hpp
-/home/aditya.pawar/personal/Projects/RayTracing/src/sphere.hpp
-iostream
--
+/workspaces/Projects/RayTracing/src/sphere.hpp
 

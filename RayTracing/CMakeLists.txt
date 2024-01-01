@@ -20,11 +20,12 @@ include/ray.hpp
 include/sphere.hpp
 include/vec3.hpp
 include/interval.hpp
+include/camera.hpp
 include/hittable.hpp
 include/hittable_list.hpp
 include/utils.hpp
 
-src/hit_objects_3.cpp
+src/after_refactoring.cpp
 
 )
 

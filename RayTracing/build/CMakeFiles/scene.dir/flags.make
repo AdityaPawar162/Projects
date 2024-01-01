@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wnon-virtual-dtor -Wreorder -Wmaybe-uninitialized -Wunused-variab
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/aditya.pawar/personal/Projects/RayTracing/include 
+CXX_INCLUDES = -I/workspaces/Projects/RayTracing/include 
 
