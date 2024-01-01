@@ -19,6 +19,7 @@ include/color.hpp
 include/ray.hpp
 include/sphere.hpp
 include/vec3.hpp
+include/interval.hpp
 include/hittable.hpp
 include/hittable_list.hpp
 include/utils.hpp
