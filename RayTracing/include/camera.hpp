@@ -9,8 +9,9 @@
 class camera{
     public:
     /*Public Camera Parameters Here*/
-    double aspect_ratio = 1.0;  // Ratio of image width over height
-    int    image_width   = 100;  // Rendered image width in pixel count
+    double aspect_ratio = 1.0;    // Ratio of image width over height
+    int    image_width   = 100;   // Rendered image width in pixel count
+    int    samples_per_pixel = 10;// Count of random samples for each pixel
     camera() : aspect_ratio(1.0), image_width(100),
            image_height(static_cast<int>(image_width / aspect_ratio)),
            center(0, 0, 0), pixel00_loc(1), pixel_delta_u(1), pixel_delta_v(1) {};
@@ -25,12 +26,13 @@ class camera{
             std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
             for(int i = 0; i < image_width; ++i)
             {
-                auto pixel_center = pixel00_loc + (i * pixel_delta_u) + (j * pixel_delta_v);
-                auto ray_direction = pixel_center - center;
-                ray r(center, ray_direction);
-
-                color pixel_color = ray_color(r, world);
-                writeColor(std::cout, pixel_color);
+                color pixel_color(0,0,0);
+                for (int sample = 0; sample < samples_per_pixel; ++sample) {
+                    ray r = get_ray(i, j);
+                    pixel_color += ray_color(r, world);
+                }
+                writeColor(std::cout, pixel_color, samples_per_pixel);
+              
             }
         }
 
@@ -41,7 +43,7 @@ class camera{
     /*Private Camera Variables Here*/
     int    image_height;         // Rendered image height
     point3 center;               // Camera center
-    point3 pixel00_loc;         // Location of pixel 0, 0
+    point3 pixel00_loc;          // Location of pixel 0, 0
     vec3   pixel_delta_u;        // Offset to pixel to the right
     vec3   pixel_delta_v;        // Offset to pixel below
 
@@ -71,7 +73,24 @@ class camera{
         pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
     }
 
-    
+    ray get_ray(int i, int j) const {
+        // Get a randomly sampled camera ray for the pixel at location i,j.
+
+        auto pixel_center = pixel00_loc + (i * pixel_delta_u) + (j * pixel_delta_v);
+        auto pixel_sample = pixel_center + pixel_sample_square();
+
+        auto ray_origin = center;
+        auto ray_direction = pixel_sample - ray_origin;
+
+        return ray(ray_origin, ray_direction);
+    }
+
+    vec3 pixel_sample_square() const {
+        // Returns a random point in the square surrounding a pixel at the origin.
+        auto px = -0.5 + random_generator();
+        auto py = -0.5 + random_generator();
+        return (px * pixel_delta_u) + (py * pixel_delta_v);
+    }
 
     color ray_color(const ray& r,const hittable& world) const
     {

@@ -49,6 +49,10 @@ vec3.hpp
 ../include/utils.hpp
 cmath
 -
+cstdlib
+-
+random
+-
 limits
 -
 memory

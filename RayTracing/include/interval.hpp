@@ -13,6 +13,11 @@ public:
 
   bool surronds(double x) const { return min < x && x < max; }
 
+  double clamps(double x) const {
+    if(x < min) return min;
+    if(x > max) return max; 
+  }
+
   static const interval empty, universe;
 };
 
