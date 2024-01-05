@@ -69,6 +69,8 @@ cmath
 ../include/cmath
 iostream
 -
+utils.hpp
+../include/utils.hpp
 
 /workspaces/Projects/RayTracing/src/after_refactoring.cpp
 utils.hpp
