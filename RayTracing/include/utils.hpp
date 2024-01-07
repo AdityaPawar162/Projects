@@ -28,6 +28,14 @@ inline double random_generator(){
     return distribution(generator);
 }
 
+inline double random_generator(double min,double max)
+{
+    // Returns a random double generator[parametetrized]
+    static std::uniform_real_distribution<double> distribution(min,max);
+    static std::mt19937 generator;
+    return distribution(generator);
+}
+
 
 
 // Common Headers

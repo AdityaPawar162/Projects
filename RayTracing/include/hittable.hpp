@@ -3,11 +3,14 @@
 
 #include "utils.hpp"
 
+class material;
+
 class hit_record {
 public:
   hit_record() : p(1,1,1),normal(0,0,1), t(0) {};
   point3 p;
   vec3 normal;
+  shared_ptr<material> mat;
   double t;
   bool front_face;
 

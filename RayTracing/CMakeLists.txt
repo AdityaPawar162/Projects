@@ -4,10 +4,10 @@ cmake_minimum_required ( VERSION 3.1.0...3.27.0 )
 
 project ( RTWeekend LANGUAGES CXX )
 
-# Set the C++ standard to C++11
-set(CMAKE_CXX_STANDARD 11)
+# Set the C++ standard to C++17
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set ( CMAKE_CXX_EXTENSIONS     OFF )
+set ( CMAKE_CXX_EXTENSIONS     ON )
 
 
 # Add the include directory to the project
@@ -24,6 +24,7 @@ include/camera.hpp
 include/hittable.hpp
 include/hittable_list.hpp
 include/utils.hpp
+include/material.hpp
 
 src/after_refactoring.cpp
 
