@@ -7,6 +7,7 @@ CMakeFiles/scene.dir/src/after_refactoring.cpp.o
  ../include/hittable.hpp
  ../include/hittable_list.hpp
  ../include/interval.hpp
+ ../include/material.hpp
  ../include/ray.hpp
  ../include/sphere.hpp
  ../include/utils.hpp

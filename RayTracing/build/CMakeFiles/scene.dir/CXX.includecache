@@ -13,6 +13,8 @@ color.hpp
 ../include/color.hpp
 hittable.hpp
 ../include/hittable.hpp
+material.hpp
+../include/material.hpp
 iostream
 -
 
@@ -35,6 +37,10 @@ vector
 -
 
 ../include/interval.hpp
+
+../include/material.hpp
+utils.hpp
+../include/utils.hpp
 
 ../include/ray.hpp
 vec3.hpp
@@ -75,8 +81,12 @@ utils.hpp
 /workspaces/Projects/RayTracing/src/after_refactoring.cpp
 utils.hpp
 /workspaces/Projects/RayTracing/src/utils.hpp
+color.hpp
+/workspaces/Projects/RayTracing/src/color.hpp
 camera.hpp
 /workspaces/Projects/RayTracing/src/camera.hpp
+material.hpp
+/workspaces/Projects/RayTracing/src/material.hpp
 hittable_list.hpp
 /workspaces/Projects/RayTracing/src/hittable_list.hpp
 sphere.hpp

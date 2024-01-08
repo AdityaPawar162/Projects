@@ -6,6 +6,7 @@ CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/color.hpp
 CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/hittable.hpp
 CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/hittable_list.hpp
 CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/interval.hpp
+CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/material.hpp
 CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/ray.hpp
 CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/sphere.hpp
 CMakeFiles/scene.dir/src/after_refactoring.cpp.o: ../include/utils.hpp
