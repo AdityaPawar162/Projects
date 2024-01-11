@@ -1,6 +1,6 @@
 #ifndef INTERVAL_HPP
 #define INTERVAL_HPP
-
+#pragma once
 class interval {
 public:
   double min, max;
@@ -14,8 +14,10 @@ public:
   bool surronds(double x) const { return min < x && x < max; }
 
   double clamps(double x) const {
-    if(x < min) return min;
-    if(x > max) return max; 
+    if(x < min) {return min; }
+    if(x > max) {return max; } 
+
+    EXIT_SUCCESS;
   }
 
   static const interval empty, universe;
