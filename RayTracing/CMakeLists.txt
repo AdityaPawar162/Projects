@@ -31,25 +31,32 @@ src/after_refactoring.cpp
 )
 
 include_directories(include)
+add_executable(scene ${SOURCES})
 
-message (STATUS "Compiler ID: " ${CMAKE_CXX_COMPILER_ID})
+# message (STATUS "Compiler ID: " ${CMAKE_CXX_COMPILER_ID})
 
+# target_compile_options(scene PRIVATE
+#     # Common optimization flags
+#     -O3
+# )
 
-if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-    add_compile_options("/we 4265") # Class has virtual functions, but its non-trivial destructor is not virtual
-    add_compile_options("/w3 5038") # Data member will be initialized after [other] data member
-    add_compile_options("/we 5204") # Class has virtual functions, but its trivial destructor is not virtual
-elseif (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    add_compile_options(-Wnon-virtual-dtor) # Class has virtual functions, but its destructor is not virtual
-    add_compile_options(-Wreorder) # Data member will be initialized after [other] data member
-    add_compile_options(-Wmaybe-uninitialized) # Variable improperly initialized
-    add_compile_options(-Wunused-variable) # Variable is defined but unused
-elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    add_compile_options(-Wnon-virtual-dtor) # Class has virtual functions, but its destructor is not virtual
-    add_compile_options(-Wreorder) # Data member will be initialized after [other] data member
-    add_compile_options(-Wsometimes-uninitialized) # Variable improperly initialized
-    add_compile_options(-Wunused-variable) # Variable is defined but unused
-endif()
+# # Compiler-specific optimization flags
+# if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+#     target_compile_options(scene PRIVATE
+#         /Ox  # Full optimization
+#     )
+# elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+#     target_compile_options(scene PRIVATE
+#         -march=native  # Architecture-specific optimization
+#         -funroll-loops  # Loop unrolling
+#     )
+# elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+#     target_compile_options(scene PRIVATE
+#         -march=native  # Architecture-specific optimization
+#         -funroll-loops  # Loop unrolling
+#     )
+# endif()
+
 
 # Create the library
 # add_library(scene STATIC src/Scene_rays.cpp)
@@ -57,7 +64,6 @@ endif()
 # Create the executable
 # add_executable(main ${SOURCES})
 
-add_executable(scene ${SOURCES})
 
 
 # Set the output directory for the executables
