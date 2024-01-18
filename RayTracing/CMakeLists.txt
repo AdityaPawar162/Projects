@@ -30,6 +30,8 @@ src/after_refactoring.cpp
 
 )
 
+00:07:32:96:4e:a3
+
 include_directories(include)
 add_executable(scene ${SOURCES})
 
@@ -37,7 +39,7 @@ add_executable(scene ${SOURCES})
 
 # target_compile_options(scene PRIVATE
 #     # Common optimization flags
-#     -O3
+#     -O1
 # )
 
 # # Compiler-specific optimization flags

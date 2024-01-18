@@ -78,17 +78,17 @@ iostream
 utils.hpp
 ../include/utils.hpp
 
-/workspaces/Projects/RayTracing/src/after_refactoring.cpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/after_refactoring.cpp
 utils.hpp
-/workspaces/Projects/RayTracing/src/utils.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/utils.hpp
 color.hpp
-/workspaces/Projects/RayTracing/src/color.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/color.hpp
 camera.hpp
-/workspaces/Projects/RayTracing/src/camera.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/camera.hpp
 material.hpp
-/workspaces/Projects/RayTracing/src/material.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/material.hpp
 hittable_list.hpp
-/workspaces/Projects/RayTracing/src/hittable_list.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/hittable_list.hpp
 sphere.hpp
-/workspaces/Projects/RayTracing/src/sphere.hpp
+/home/aditya.pawar/personal/Projects/RayTracing/src/sphere.hpp
 

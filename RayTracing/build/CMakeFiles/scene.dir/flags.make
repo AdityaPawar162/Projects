@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/workspaces/Projects/RayTracing/include 
+CXX_INCLUDES = -I/home/aditya.pawar/personal/Projects/RayTracing/include 
 

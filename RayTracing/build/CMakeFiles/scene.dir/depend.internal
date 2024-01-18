@@ -12,4 +12,4 @@ CMakeFiles/scene.dir/src/after_refactoring.cpp.o
  ../include/sphere.hpp
  ../include/utils.hpp
  ../include/vec3.hpp
- /workspaces/Projects/RayTracing/src/after_refactoring.cpp
+ /home/aditya.pawar/personal/Projects/RayTracing/src/after_refactoring.cpp
