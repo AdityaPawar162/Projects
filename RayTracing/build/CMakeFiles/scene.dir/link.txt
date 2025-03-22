@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/scene.dir/src/after_refactoring.cpp.o  -o scene 
